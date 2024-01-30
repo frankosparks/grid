@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.card{
+    background-color: rgb(171, 88, 88);
+    border-radius: 10px;
+     padding: 30px;
+    margin-bottom: 10px;
+}
+.card__purple{
+    background-color: rgb(143, 21, 143);
+    color: white;
+    grid-column: 1/3;
+}
+.card__2{
+    background-color: rgb(94, 90, 90);
+    color: white;
+}
+.card__3{
+    background-color: wheat;
+    color:black;
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+.card__4{
+    background-color: black;
+    color: white;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.card__5{
+    background-color:white;
+    color: black;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media all and (max-width: 50rem) {
+    .container{
+       grid-template-columns: 1fr;
+       width: 100%;
+    }
+    .card__purple{
+        background-color: rgb(143, 21, 143);
+        color: white;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .card__2{
+        background-color: rgb(94, 90, 90);
+        color: white;
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .card__3{
+        background-color: wheat;
+        color:black;
+        grid-row: 3/4;
+        grid-column: 1;
+    }
+    .card__4{
+        background-color: black;
+        color: white;
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+    .card__5{
+        background-color:white;
+        color: black;
+        grid-column: 1;
+        grid-row: 5/6;
+    }
+}
+
